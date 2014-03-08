@@ -5,7 +5,7 @@ from django.utils.translation import ugettext_lazy as _
 from app.model_mixins import TimestampedMixin
 
 class UserManager(authm.BaseUserManager):
-    def create_user(self, email, password=None):
+    def create_user(self, first_name, last_name, email, password=None):
         u = self.model(
             email=self.normalize_email(email),
             password=password,
@@ -14,7 +14,7 @@ class UserManager(authm.BaseUserManager):
         u.save()
         return u
 
-    def create_superuser(self, email, password):
+    def create_superuser(self, first_name, last_name, email, password):
         u = self.model(
             email=self.normalize_email(email),
             password=password,
