@@ -1,0 +1,31 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Backbone start here</title>
+    <meta charset="utf-8">
+
+    <!-- Enables Responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sets Favicon -->
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}" />
+
+    <!-- Stylesheets -->
+    <link href="{% static 'stylesheets/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Backbone dependencies -->
+    <script src="{% static 'js/lib/jquery-1.11.0.min.js' %}"></script>
+    <script src="{% static 'js/lib/underscore-min.js' %}"></script>
+    <script src="{% static 'js/lib/backbone-min.js' %}"></script>
+    <script src="{% static 'js/lib/handlebars-v1.3.0.js' %}"></script>
+    <script src="{% static 'js/lib/backbone.handlebars.min.js' %}"></script>
+    <script src="{% static 'js/app/models.js' %}"></script>
+    <script src="{% static 'js/app/views.js' %}"></script>
+    <script src="{% static 'js/app/routes.js' %}"></script>
+    <script src="{% static 'js/app/csrf.js' %}"></script>
+    <script src="{% static 'js/app/bootstrap.js' %}"></script>
+  </body>
+</html>
